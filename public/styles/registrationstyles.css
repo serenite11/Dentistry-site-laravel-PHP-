@@ -1,0 +1,174 @@
+.container {
+    display: flex;
+}
+
+
+.rounded-input:invalid {
+    border: 2px solid red;
+}
+
+.rounded-input:invalid+.validity-icon::before {
+    content: '✖';
+    color: red;
+}
+
+.rounded-input:valid+.validity-icon::before {
+    content: '✓';
+    color: green;
+}
+
+.rounded-input:valid {
+    border: 2px solid green;
+}
+
+.rounded-input {
+    height: 10px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.autocomplete {
+    /*the container must be positioned relative:*/
+    position: relative;
+    display: block;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 10px;
+    width: 150px;
+    padding: 10px;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
+
+.rounded-input-profile {
+    height: 10px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+.wrapper {
+
+    display: table;
+}
+
+.main__content {
+    padding: 5px;
+    text-align: center;
+}
+
+.image {
+    display: block;
+    margin: 15px auto;
+    border: 5px dashed #ddd;
+    background: #fff;
+    border-radius: 15px;
+    max-width: 60%;
+    max-height: 600px;
+}
+
+.canvas {
+    display: block;
+    max-width: 60%;
+    max-height: 600px;
+    position: absolute;
+    border: 0;
+    border-radius: 15px;
+    cursor: move;
+}
+
+.input {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+}
+
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    background: #6694f6;
+    border: 0;
+    border-radius: 15px;
+    padding: 10px 25px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+}
+
+.button:hover {
+    background: #8acef1;
+}
+
+.button_disabled {
+    background: #555;
+    cursor: not-allowed;
+}
+
+.a,
+.a:visited {
+    color: #6694f6;
+}
+
+.a:hover {
+    text-decoration: none;
+}
+
+.a_hidden {
+    opacity: 0;
+}
+
+.avatar {
+    margin: 5%;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+  }
+  .autocomplete {
+    /*the container must be positioned relative:*/
+    position: relative;
+    display: block;
+  }
