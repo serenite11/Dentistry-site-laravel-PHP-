@@ -1,0 +1,80 @@
+<head>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+    <table class="sides" width="70%">
+        <!--Шапка сайта; width - ширина шапки; margin-left/right - отступы от границ сайта-->
+        <thead>
+            <!--thead - указывает что это шапка таблицы-->
+            <tr>
+                <!--Строка таблицы-->
+                <th><a href="MainContent.html" target="mainpage"><img src="images\logo.jpg" height="40px"></a></th>
+                <!--Ячейка заголовка таблицы-->
+                <th width="60%">
+                    <h1>Жемчуг</h1>
+                </th>
+                <th class="" id="form-signin">
+                    <form action="">
+                        <input class="inputs-main" type="text" id="input-main"><br>
+                        <!--Поле ввода для логина; size - размер поля; type - тип ввода-->
+                        <input class="inputs-main" type="password"><br>
+                        <button id="button-main" onclick='myfunction()' type="submit">Войти</button><a
+                            href="Registration.html" target="mainpage">Регистрация</a>
+                    </form>
+                    <!--<button> - кнопка входа; <a> - ссылка для регистрации;<font-size> - размер шрифта-->
+                </th>
+            </tr>
+        </thead>
+    </table>
+    <table width="70%" class="vkladki">
+        <!--cellpadding - расстояние между текстом в ячейке и самой ячейки cellspacing - расстояние между ячейками-->
+        <tr>
+            <td><a href="MainContent.html" target="mainpage">Основное</a></td>
+            <!--target - указывает куда будет помещаться контент со страницы которая находится в href-->
+            <td><a href="Doctors.html" target="mainpage">Врачи</a></td>
+            <td><a href="Services.html" target="mainpage">Услуги</a></td>
+            <td><a href="Contacts.html" target="mainpage">Контакты</a></td>
+            <td width="25%"><a href="Profile.html" target="mainpage">Личный кабинет</a></td>
+        </tr>
+    </table>
+    <table cellpadding="10px" cellspacing="0" width="70%" class="main">
+        <td valign="top" align="center" width="15%" class="colorback">
+            <a href="AnesthesiaCare.html" target="mainpage">Лечение под наркозом</a><br>
+            <a href="Surgery.html" target="mainpage">Хирургия</a><br>
+            <a href="ChildrenDentistry.html" target="mainpage">Детская стоматология</a><br>
+            <a href="Diseases.html" target="mainpage">Болезни</a><br>
+            <a href="Feedback.html" target="mainpage">Обратная связь</a><br>
+        </td>
+        <td>
+            <iframe frameborder="0" width="100%" height="1000px" src="MainContent.html" name="mainpage"></iframe>
+            <!--  создает плавающий фрейм, который находится внутри обычного документа, он позволяет загружать в область заданных размеров любые другие независимые документы, name Имя фрейма, src путь к файлу, содержимое которого будет загружаться во фрейм, frameborder устанавливает, отображать границу вокруг фрейма или нет-->
+        </td>
+        <td width="15%" valign="top" align="center" class="colorback">
+            <p><b>Поиск</b></p>
+            <!--<p> - текст; <b> выделение текста жирным-->
+            <input type="text">
+            <button>Искать</button><br><br>
+            <p></p><a href="https://lays.ru/"><img src="images\banner1.jpg" height="120px"></a><br>
+            Чипсы Lays</p>
+            <p><a href="https://www1.nyc.gov/"><img src="images\banner2.jpg" height="100px"></a> <br>
+                Добро пожаловать в NYC</p>
+            <p>
+                <a
+                    href="https://videoplay.media/?etext=2202.rbSkOMy9r3PJrjX7okjf78lSS9mVDWLFfqD8hRpKiv8jWL76bv4q78ZP8XSjC9gTcWNod2t1b21lZm1laXlpcw.f2956432c3fae6e96059bd17b48d3c035a5f6c23&yclid=5773920266989130732"><img
+                        src="images\banner3.jpg" height="100px"></a><br>
+                Место для рекламы
+            </p>
+        </td>
+    </table>
+    <hr width="100%">
+    <!--Рисует горизонтальную линию, которая по своему виду зависит от используемых параметров, а также браузера-->
+    <footer align="center">Все права защищены</footer>
+    <!--Тег <footer> задаёт «подвал» сайта или раздела, в нём может располагаться имя автора, дата документа, контактная и правовая информация.-->
+</body>
+
+<script>
+    function myfunction() {
+        alert('Функция не реализована')
+    } 
+</script>

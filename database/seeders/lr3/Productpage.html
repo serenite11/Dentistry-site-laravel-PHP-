@@ -1,0 +1,101 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="/styles/styles.css">
+<h2 align="center">Зубной шифтит</h2>
+<div class="product-img">
+    <img height="500px" src="ServicesPhoto/shtift_zubnoi.jpg">
+</div>
+<div><strong>Цена:</strong>3500 ₽</div>
+<div>
+    <button class="btn-services">Купить</button>
+</div>
+<p>
+<div>
+    <button class="buttons-feature" id="default" onclick="openTab(event, 'Description')">Описание</button>
+    <button class="buttons-feature" onclick="openTab(event, 'Properties')">Противопоказания</button>
+    <button class="buttons-feature" onclick="openTab(event, 'Reviews')">Отзывы</button>
+</div>
+<div id="Description" class="tabcontent">
+    <p>Штифты изготавливаются из металлического и неметаллического материала. Наиболее востребованы и надежны
+        титановые стержни. Другие виды металлов, применяющихся для реставрации: золотой (анкерный) сплав,
+        нержавеющая сталь, палладий, латунь. Отдельно выделяют культевую вкладку – микропротез, накрывающийся
+        коронкой.
+
+        Из неметаллических материалов применяется керамика, стекловолокно (гипоаллергенный, эластичный, не
+        просвечивающийся сквозь пломбу материал), углепластик (прочный материал, обеспечивающий максимальный
+        терапевтический эффект).
+
+        Штифт в корень зуба подбирается по форме корневого канала: коническая форма, цилиндроконическая,
+        цилиндрическая, винтовая. Также виды зависят от метода фиксации. Самый надежный способ крепления это, когда
+        стержень ввинчивается в костную ткань. Такой штифт называется активным. Ставится он в случае практически
+        полного разрушения зубной ткани. Если требуется укрепить зуб после лечения, то устанавливают пассивный
+        штифт. Это щадящая установка на стоматологический цемент в полость корневого канала.</p>
+</div>
+
+<div id="Properties" class="tabcontent">
+    <ul>
+        <li>Кариес</li>
+        <li>Запущенное или острое воспаление пародонта</li>
+        <li>Доброкачественные образования в полости рта (кисты, гранулемы)</li>
+        <li>Толщина стенки корня до двух миллиметров</li>
+    </ul>
+</div>
+
+<div id="Reviews" class="tabcontent">
+    <div>
+        <form id="reviewForm">
+            <label for="rate">Рейтинг (stars)</label>
+            <select id="rate" name="rate" class="form-control">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <div class="reviewTextCont">
+                <label for="textofreview">Сообщение</label>
+                <textarea id="textofreview" name="textofreview" placeholder="Введите текст отзыва"
+                    class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Оставить отзыв</button>
+        </form>
+    </div>
+    <div class="reviews">
+        <div class="review">
+            <div class="review-reviewer">Иваныч</div>
+            <div class="review-date">4.05.1993</div>
+            <div class="review-text">Спас себе жизнь</div>
+        </div>
+        <div class="review">
+            <div class="review-reviewer">Вадим</div>
+            <div class="review-date">9.03.2014</div>
+            <div class="review-text">Ужас какой!!!!</div>
+        </div>
+        <div class="review">
+            <div class="review-reviewer">Михаил</div>
+            <div class="review-date">1.02.2001</div>
+            <div class="review-text">Норм</div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+
+    function openTab(evt, name) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(name).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
